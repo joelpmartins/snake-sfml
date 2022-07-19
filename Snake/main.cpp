@@ -3,7 +3,7 @@
 
 #define SNAKE_MAX_SIZE 52 // determina o fim de jogo
 #define SNAKE_INITIAL_DIRECTION "right"
-#define SNAKE_VELOCITY 0.1 // quanto maior, mais rápido
+#define SNAKE_VELOCITY 0.1 // quanto maior, mais rÃ¡pido
 
 using namespace sf;
 
@@ -12,11 +12,11 @@ String direction = SNAKE_INITIAL_DIRECTION;
 
 
 struct Snake {
-	int posX, posY;
+	float posX, posY;
 } snake[SNAKE_MAX_SIZE];
 
 struct Fruit {
-	int posX, posY;
+	float posX, posY;
 } fruit;
 
 void spawn_fruit() {
@@ -95,7 +95,7 @@ int main() {
 
 	Text t_score("Score: ", roboto, 50);
 	Text t_exit("Pressione Q para sair", roboto, 70);
-	Text t_win("Você venceu!", roboto, 150);
+	Text t_win("VocÃª venceu!", roboto, 150);
 
 	spawn_fruit();
 
